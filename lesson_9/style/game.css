@@ -1,0 +1,76 @@
+@import url(reset.css);
+body {
+    font-family: sans-serif;
+    color: #fff;
+}
+header {
+    background-color: blueviolet;
+    margin-bottom: 50px;
+}
+/* -----------------Загальні блоки------------- */
+h1,
+h2 {
+    font-size: 32px;
+    line-height: 1.2;
+    text-align: center;
+    padding: 50px 0px;
+}
+.container-game {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0px 15px;
+}
+.game {
+    background-color: brown;
+}
+[class*="block-"]:not(.block-start) {
+    visibility: hidden;
+}
+.game:hover,
+.game:hover + .game {
+    visibility: visible;
+}
+/* ------------------game-block----------- */
+.game-block {
+    font-size: 0px;
+    margin-bottom: 50px;
+}
+.block-start {
+    background-color: red;
+    display: inline-block;
+    font-size: 20px;
+    padding: 25px;
+    color: #fff;
+}
+.block-1 {
+    width: 400px;
+    height: 30px;
+}
+.block-2 {
+    width: 40px;
+    height: 70px;
+    margin-left: 360px;
+}
+.block-3 {
+    width: 300px;
+    height: 20px;
+    margin-left: 360px;
+}
+.block-4 {
+    width: 10px;
+    height: 200px;
+    margin-left: 650px;
+}
+.block-finish {
+    width: 100px;
+    margin-left: 605px;
+    background-color: cornflowerblue;
+    color: #fff;
+    padding: 25px 20px;
+    font-size: 20px;
+    border-radius: 20px;
+    text-align: center;
+}
+footer {
+    background-color: cadetblue;
+}

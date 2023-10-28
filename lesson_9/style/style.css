@@ -1,0 +1,222 @@
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap);
+@import url("fonts.css");
+@import url("reset.css");
+body {
+    font-family: "Inter";
+    font-size: 18px;
+    color: #fff;
+}
+.container-cards {
+    max-width: 1050px;
+    padding: 0px 15px;
+    margin: 0 auto;
+}
+/* -------------Загальні блоки------------ */
+* a:focus {
+    outline: 3px solid darkred;
+}
+.image-1,
+.image-2,
+.image-3 {
+    display: inline-block;
+    width: 300px;
+    height: 195px;
+}
+/* ----------------practice------------ */
+.practice {
+    background: url("../img/practice/background.jpg") right / cover no-repeat;
+    padding: 50px 0px;
+    min-height: 100%;
+}
+.practice:active {
+    background: url("../img/practice/background-2.jpg") 0 0 / cover no-repeat;
+}
+.practice-container {
+    max-width: 900px;
+    padding: 0px 15px;
+    margin: 0 auto;
+}
+.practice-top {
+    margin-bottom: 50px;
+    text-align: center;
+}
+.practice-title {
+    font-weight: 600;
+    font-size: 42px;
+}
+.practice-title:not(:last-child) {
+    margin-bottom: 30px;
+}
+.practice-title:hover {
+    background-color: blueviolet;
+    box-shadow: 10px 3px 4px rgb(45, 11, 76);
+    color: rgba(7, 8, 35, 0.719);
+    letter-spacing: 10px;
+    opacity: 0.5;
+}
+.practice-item {
+    display: inline-block;
+}
+.practice-item:not(:last-child) {
+    margin-right: 20px;
+}
+.practice-item::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+.practice-item:hover::before {
+    content: "";
+    background-color: blueviolet;
+}
+.practice-link:active {
+    vertical-align: middle;
+}
+.practice-content {
+    max-width: 600px;
+}
+.content-title {
+    font-size: 32px;
+    color: green;
+    font-weight: 600;
+    line-height: 1.2;
+}
+.content-title:not(:last-child) {
+    margin-bottom: 10px;
+}
+.content-text p {
+    margin-bottom: 20px;
+}
+.content-text p:last-of-type {
+    margin-bottom: 0px;
+}
+.content-text {
+    color: #000;
+    font-size: 20px;
+    line-height: 1.3;
+}
+.content-text:not(:last-child) {
+    margin-bottom: 30px;
+}
+.button-block {
+    display: inline-block;
+    font-size: 0px;
+}
+.content-button {
+    background-color: darkgreen;
+    padding: 20px 30px;
+    font-size: 18px;
+}
+.content-button:hover {
+    box-shadow: 0px 0px 4px rgb(3, 65, 3);
+    opacity: 0.5;
+}
+.content-button:first-of-type:visited {
+    background-color: rgb(120, 126, 120);
+}
+.content-button:not(:last-child) {
+    margin-right: 20px;
+}
+.button-content {
+    visibility: hidden;
+    opacity: 0;
+}
+.button-block:hover .button-content {
+    opacity: 0.5;
+    visibility: visible;
+}
+/* ------------cards---------- */
+.cards {
+    background-color: silver;
+    padding: 150px 0px;
+    color: rgb(45, 11, 76);
+}
+.cards:not(:last-child) {
+    margin-bottom: 50px;
+}
+.cards-columns {
+    font-size: 0px;
+}
+.cards-column {
+    display: inline-block;
+    max-width: 300px;
+    font-size: 0px;
+    vertical-align: top;
+}
+.cards-column:not(:last-child) {
+    margin-right: 30px;
+}
+.cards-column:hover {
+    background-color: #fff;
+    border-radius: 30px;
+    max-width: 300px;
+    min-height: 400px;
+}
+.cards-image:not(:last-child) {
+    margin-bottom: 10px;
+}
+.image-1 {
+    background: url("../img/practice/01.jpg") center / cover no-repeat;
+}
+.image-2 {
+    background: url("../img/practice/02.jpg") right / cover no-repeat;
+}
+.image-3 {
+    background: url("../img/practice/03.jpg") center / cover no-repeat;
+}
+.cards-content {
+    font-size: 18px;
+    padding: 0px 15px 10px 15px;
+}
+.cards-title {
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+}
+.cards-title:not(:last-child) {
+    margin-bottom: 10px;
+}
+/* --------------target---------- */
+.target-container {
+    max-width: 800px;
+}
+.button {
+    color: cadetblue;
+    background-color: silver;
+    padding: 20px 40px;
+}
+.image {
+    display: none;
+}
+.image:target {
+    display: block;
+}
+/* --------------footer--------- */
+footer {
+    background: url("../img/practice/footer.jpg") 0 0 / cover no-repeat;
+    padding: 50px 0px;
+}
+.container-footer {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0px 15px;
+}
+.footer-links {
+    font-size: 0px;
+}
+.link {
+    background-color: blue;
+    font-weight: 500;
+    font-size: 25px;
+}
+.link:nth-child(1) {
+    margin-right: 50px;
+    padding: 20px 10px;
+    border-radius: 20px;
+}
+.link:nth-child(2) {
+    padding: 20px 30px;
+    border-radius: 10px;
+}
